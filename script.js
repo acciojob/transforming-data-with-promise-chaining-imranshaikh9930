@@ -8,7 +8,7 @@ btn.addEventListener("click",()=>{
 
 	setTimeout(()=>{
 
-		output.textContent = `Result ${inputVal.value}`
+		output.textContent = `Result: ${inputVal.value}`
 		resolve(inputVal.value);
 		
 		
@@ -18,7 +18,7 @@ btn.addEventListener("click",()=>{
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				let result = inputVal.value * 2;
-				output.textContent = `Result ${result}`;
+				output.textContent = `Result: ${result}`;
 
 				resolve(result);
 			},1000)
@@ -27,7 +27,7 @@ btn.addEventListener("click",()=>{
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				let newNumber =  number - 3;
-				output.textContent = `Result ${newNumber}`;
+				output.textContent = `Result:${newNumber}`;
 				resolve(newNumber);
 			},1000)
 		})
@@ -35,7 +35,7 @@ btn.addEventListener("click",()=>{
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				let num = number +  10;
-				output.textContent = `Result ${num}`;
+				output.textContent = `Result: ${num}`;
 				resolve(num);
 			},1000)
 		})
